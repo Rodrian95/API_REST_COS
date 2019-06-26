@@ -2,7 +2,7 @@ var db =  require('../database/db.js');
 var connection = db.connection;
 
 const uploadData = (request, response) => {//función que se importa en las rutas
-    var post  = {campo_1: request.body.campo_1, campo_2: request.body.campo_2};//json con los cmapos de la base de datos y sus valores en el request
+    var post  = {campo_1: request.body.campo_1, campo_2: request.body.campo_2};//json con los campos de la base de datos y sus valores en el request
     
     connection.connect();//conectando a base de datos
  
